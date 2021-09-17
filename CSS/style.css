@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+:root {
+  --yellow: #ffa323;
+  --grey: #6c757d;
+}
+p {
+  font-size: small;
+  margin: 0;
+}
+.Navigation {
+  position: fixed;
+  z-index: 99999;
+  background-color: white;
+}
+.Navigation .logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Navigation .logo h2 {
+  color: var(--yellow);
+  font-weight: 500;
+  font-family: "Great Vibes", cursive;
+  margin: 0;
+}
+.Navigation .logo i {
+  color: var(--yellow);
+  color: white;
+  display: none;
+}
+.Navigation a {
+  text-decoration: none;
+  /* color: white; */
+  color: black;
+  font-size: small;
+}
+.Navigation .nav-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.Navigation .nav-links ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.Navigation .nav-links ul li {
+  display: block;
+  padding: 0.7rem;
+}
+.Navigation .order {
+  color: white !important;
+  font-size: small;
+  padding: 0.7rem;
+  text-decoration: none;
+  border-radius: 2px;
+  background-color: var(--yellow);
+  text-align: center;
+}
+
+.Home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.Home video {
+  width: 100%;
+  z-index: -1;
+}
+.Home .home-text {
+  /* background-color: #fff; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.home-text h1 {
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.home-text h2 {
+  color: var(--yellow);
+  font-weight: 500;
+  font-size: 4rem;
+  font-family: "Great Vibes", cursive;
+}
+.Home .layer {
+  position: absolute;
+  top: 0;
+  /* z-index: 9999; */
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.618);
+}
+.Home .home-text .home-btn a {
+  color: white;
+  font-size: small;
+  padding: 0.7rem;
+  text-decoration: none;
+  border-radius: 2px;
+}
+.home-text .home-btn .order {
+  background-color: var(--yellow);
+  border: 1px solid var(--yellow);
+}
+.home-text .home-btn .menu {
+  border: 1px solid white;
+}
+
+.Breakfast .Breakfast-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.Breakfast .Breakfast-card img {
+  width: 6rem;
+  height: auto;
+  border-radius: 50%;
+}
+.Breakfast .Breakfast-card .p {
+  font-size: 0.7rem;
+}
+.About .about-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.About .about-img .aboutimg {
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+.About .about-img .img1 {
+  background-image: url("../Images/About/about.jpg");
+}
+.About .about-img .img2 {
+  background-image: url("../Images/About/about-1.webp");
+}
+.About .about-text {
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  flex-direction: column;
+  padding-left: 3rem;
+}
+.About .about-text h2 {
+  font-family: "Great Vibes", cursive;
+  color: var(--yellow);
+  font-size: 3rem;
+}
+.About .about-text h3 {
+  font-weight: bold;
+  margin-top: -2.5rem;
+}
+.About .about-text p {
+  color: var(--grey);
+}
+.About .order {
+  color: white;
+  font-size: small;
+  padding: 0.7rem;
+  text-decoration: none;
+  border-radius: 2px;
+  background-color: var(--yellow);
+  text-align: center;
+}
