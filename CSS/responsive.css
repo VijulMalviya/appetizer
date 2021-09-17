@@ -48,12 +48,19 @@
   }
   .About .about-text h3 {
     font-weight: bold;
-    margin-top: -2rem;
   }
   .About .order {
     margin-left: auto !important;
     margin-right: auto !important;
   }
+  .Counter{
+    height: 40vh; 
+  background-attachment: initial;
+  }
+  .Insta .insta{
+    height: 15vh;
+  }
+ 
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -93,5 +100,16 @@
   .About .order {
     margin-left: auto !important;
     margin-right: auto !important;
+  }
+  .Counter{
+    height: 40vh; 
+  }
+  .Insta .insta{
+    height: 20vh;
+  }
+  footer .footerinsta{
+    height: 5.5vh;
+ 
+    
   }
 }

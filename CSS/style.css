@@ -12,6 +12,7 @@ body {
 :root {
   --yellow: #ffa323;
   --grey: #6c757d;
+  --black:#141313;
 }
 p {
   font-size: small;
@@ -83,7 +84,6 @@ p {
   z-index: -1;
 }
 .Home .home-text {
-  /* background-color: #fff; */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -168,7 +168,7 @@ p {
 .About .about-text h2 {
   font-family: "Great Vibes", cursive;
   color: var(--yellow);
-  font-size: 3rem;
+  font-size: 4rem;
 }
 .About .about-text h3 {
   font-weight: bold;
@@ -176,6 +176,7 @@ p {
 }
 .About .about-text p {
   color: var(--grey);
+  line-height: 1.5rem;
 }
 .About .order {
   color: white;
@@ -185,4 +186,208 @@ p {
   border-radius: 2px;
   background-color: var(--yellow);
   text-align: center;
+}
+.About a{
+  color: white;
+}
+.Counter{
+  height: 60vh;
+  background-image:linear-gradient(to left, rgba(0, 0, 0, 0.614),rgba(0, 0, 0, 0.614)),url('../Images/Home/bg-1.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Counter-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  color: white;
+}
+.Counter .highlight h3{
+  color: var(--yellow);
+}
+.Services{
+  background-color: #FAFAFA;
+}
+.Services .Services-head, .Chief .Chief-head{
+  text-align: center;
+}
+.Services .Services-head h2,.Chief .Chief-head h2{
+  font-family: "Great Vibes", cursive;
+  color: var(--yellow);
+  font-size: 4rem;
+}
+.Services .Services-head h3,.Chief .Chief-head h3{
+  font-weight: bold;
+  margin-top: -2.5rem;
+}
+.Services .Services-card,.Chief .Chief-card{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.Services .Services-card{
+  align-items: center;
+  text-align: center;
+  
+}
+.Chief .Chief-card{
+  align-items: flex-start;
+}
+
+.Services-card .Services-circle img,.Chief-card .Chief-circle img{
+  width: 3.5rem;
+  height: auto;
+}
+.Chief-card .Chief-circle img{
+  border-radius: 15px;
+}
+.Services .Services-card h6,.Chief .Chief-card h6{
+  color: black;
+  font-weight: 500;
+}
+.Chief .Chief-card h6{
+  margin-bottom: 0.2rem;
+}
+.Services .Services-card p,.Chief .Chief-card p{
+  color: var(--grey);
+}
+.Chief .Chief-card .social-media a{
+  display: inline-block;
+  color: var(--yellow);
+  margin-top: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.Book .Book-head{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Book .Book-head h2{
+  font-family: "Great Vibes", cursive;
+  color: var(--yellow);
+  font-size: 4rem;
+}
+.Book .Book-head h3{
+  font-weight: bold;
+  margin-top: -2.5rem;
+}
+.Book form label{
+  font-size: small;
+  font-weight: 500;
+}
+.Book form input::placeholder{
+  font-size: small;
+}
+.Book form input[type="date"],.Book form input[type="time"],.Book form select{
+  font-size: small;
+  color: var(--grey);
+}
+.Book form button {
+  border: none;
+  outline: none;
+  color: white;
+  font-size: small;
+  padding: 0.7rem;
+  text-decoration: none;
+  border-radius: 2px;
+  background-color: var(--yellow);
+  text-align: center;
+}
+.Insta .insta{
+  height: 30vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.Insta .insta-1{
+  background-image: url('../Images/Insta/insta-1.webp');
+}
+.Insta .insta-2{
+  background-image: url('../Images/Insta/insta-2.webp');
+}
+.Insta .insta-3{
+  background-image: url('../Images/Insta/insta-3.webp');
+}
+.Insta .insta-4{
+  background-image: url('../Images/Insta/insta-4.webp');
+}
+footer{
+  background-color: var(--black);
+}
+footer ul{
+  margin: 0;
+  padding: 0;
+}
+footer h6{
+  
+  font-weight: 600;
+  color: white;
+}
+footer ul li{
+  list-style: none;
+  font-size: 0.7rem;
+  color: var(--grey);
+}
+footer  .social-media a{
+  padding-right: 1rem;
+  font-size: 0.8rem;
+  color: var(--grey);
+}
+footer .openhrs li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footerinsta{
+  height: 10vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+}
+footer .insta-1{
+  background-image: url('../Images/Insta/insta-1.webp');
+}
+footer .insta-2{
+  background-image: url('../Images/Insta/insta-2.webp');
+}
+footer .insta-3{
+  background-image: url('../Images/Insta/insta-3.webp');
+}
+footer .insta-4{
+  background-image: url('../Images/Insta/insta-4.webp');
+}
+footer .insta-5{
+  background-image: url('../Images/Insta/insta-5.webp');
+}
+footer .insta-6{
+  background-image: url('../Images/Insta/insta-1.webp');
+}
+footer .footerbtn{
+  /* border-radius: 0; */
+  background-color: var(--yellow);
+  color: white;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: none;
+  font-size: 0.8rem;
+}
+footer input::placeholder{
+  font-size: 0.8rem;
+}
+footer .lowerfooter p {
+  color: white;
+  font-size: 0.8rem;
+}
+footer .lowerfooter span{
+  color: var(--yellow);
 }
