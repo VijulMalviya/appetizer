@@ -212,18 +212,18 @@ p {
 .Counter .highlight h3{
   color: var(--yellow);
 }
-.Services{
+.Services, .Blog{
   background-color: #FAFAFA;
 }
-.Services .Services-head, .Chief .Chief-head{
+.Services .Services-head, .Chief .Chief-head,.Blog .Blog-head ,.Testimony .Testimony-head{
   text-align: center;
 }
-.Services .Services-head h2,.Chief .Chief-head h2{
+.Services .Services-head h2,.Chief .Chief-head h2, .Blog .Blog-head h2 ,.Testimony .Testimony-head h2{
   font-family: "Great Vibes", cursive;
   color: var(--yellow);
   font-size: 4rem;
 }
-.Services .Services-head h3,.Chief .Chief-head h3{
+.Services .Services-head h3,.Chief .Chief-head h3, .Blog .Blog-head h3 ,.Testimony .Testimony-head h3{
   font-weight: bold;
   margin-top: -2.5rem;
 }
@@ -264,7 +264,20 @@ p {
   margin-top: 0.5rem;
   padding-right: 0.5rem;
 }
-
+.Book{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../Images/Home/bg-4.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.Book .Book-text{
+  background-color: white;
+}
 .Book .Book-head{
   display: flex;
   justify-content: center;
@@ -302,6 +315,33 @@ p {
   background-color: var(--yellow);
   text-align: center;
 }
+.Blog .Blog-card .card{
+  border: none;
+  border-radius: 0;
+}
+.Blog-card .card .card-img-top{
+  border-radius: 0;
+  height: 35vh;
+}
+.Blog-card .card .card-body p{
+  font-size: small;
+  color: var(--grey);
+}
+.Blog-card .card .card-body h6{
+  color: var(--black);
+  font-weight: 600;
+}
+.Blog-card .card .blogcard-bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Blog-card .card .blogcard-bottom a{
+  font-size: small;
+  color: var(--grey);
+  text-decoration: none;
+}
+
 .Insta .insta{
   height: 30vh;
   background-repeat: no-repeat;

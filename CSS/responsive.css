@@ -57,9 +57,21 @@
     height: 40vh; 
   background-attachment: initial;
   }
+  .Book{
+    height: 80vh;
+    background-attachment: initial;
+  }
+  .Blog-card .card .card-img-top{
+    border-radius: 0;
+    height: 15vh;
+  }
+  .Book .Book-head h2{
+    font-size: 3rem;
+  }
   .Insta .insta{
     height: 15vh;
   }
+  
  
 }
 
