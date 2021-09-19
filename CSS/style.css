@@ -14,14 +14,105 @@ body {
   --grey: #6c757d;
   --black:#141313;
 }
+.FoodMenu, .Blog{
+  background-color: #FAFAFA;
+}
 p {
   font-size: small;
   margin: 0;
 }
+.loader{
+  display: none;
+  z-index: 999999;
+  position: fixed;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+.load{
+  position: relative;
+  width: 10rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.load h3{
+ margin: 0;
+  color: var(--yellow);
+  font-family: "Great Vibes", cursive;
+  animation: h3 2s ease 0s infinite alternate;
+}
+@keyframes h3 {
+  from{ transform: scale(0.6);}
+  to{transform: scale(1);}
+}
+.load .line-1{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0%;
+  width: 2%;
+  background-color: var(--yellow);
+  animation: line1 2s ease 0s infinite alternate;
+}
+@keyframes line1 {
+  from{height: 0%;}
+  to{height: 100%;}
+}
+.load .line-2{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 3%;
+  width: 0%;
+  background-color: var(--yellow);
+  animation: line2 2s ease 0s  infinite alternate;
+}
+@keyframes line2 {
+  from{width: 0%;}
+  to{width: 100%;}
+}
+.load .line-3{
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 0%;
+  width: 2%;
+  background-color: var(--yellow);
+  animation: line3 2s ease 0s infinite alternate ;
+}
+@keyframes line3 {
+  from{height: 0%;}
+  to{height: 100%;}
+}
+.load .line-4{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 3%;
+  width: 0%;
+  background-color: var(--yellow);
+  animation: line4 2s ease 0s infinite alternate ;
+}
+@keyframes line4 {
+  from{width: 0%;}
+  to{width: 100%;}
+}
+.loader svg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999999;
+  stroke-dashoffset: 1000px;
+  stroke-dasharray: 1000px;
+}
 .Navigation {
   position: fixed;
   z-index: 99999;
-  background-color: white;
 }
 .Navigation .logo {
   display: flex;
@@ -41,8 +132,7 @@ p {
 }
 .Navigation a {
   text-decoration: none;
-  /* color: white; */
-  color: black;
+  color: white;
   font-size: small;
 }
 .Navigation .nav-links {
@@ -212,18 +302,16 @@ p {
 .Counter .highlight h3{
   color: var(--yellow);
 }
-.Services, .Blog{
-  background-color: #FAFAFA;
-}
-.Services .Services-head, .Chief .Chief-head,.Blog .Blog-head ,.Testimony .Testimony-head{
+
+.Services .Services-head, .Chief .Chief-head,.Blog .Blog-head ,.Testimony .Testimony-head,.FoodMenu .FoodMenu-head{
   text-align: center;
 }
-.Services .Services-head h2,.Chief .Chief-head h2, .Blog .Blog-head h2 ,.Testimony .Testimony-head h2{
+.Services .Services-head h2,.Chief .Chief-head h2, .Blog .Blog-head h2 ,.Testimony .Testimony-head h2,.FoodMenu .FoodMenu-head h2{
   font-family: "Great Vibes", cursive;
   color: var(--yellow);
   font-size: 4rem;
 }
-.Services .Services-head h3,.Chief .Chief-head h3, .Blog .Blog-head h3 ,.Testimony .Testimony-head h3{
+.Services .Services-head h3,.Chief .Chief-head h3, .Blog .Blog-head h3 ,.Testimony .Testimony-head h3,.FoodMenu .FoodMenu-head h3{
   font-weight: bold;
   margin-top: -2.5rem;
 }

@@ -9,7 +9,7 @@
     background-image: url("../Images/Home/bg-3.webp");
   }
   .Navigation {
-    background-color: #fff;
+    background-color: #fff !important;
   }
   .Navigation .logo h2 {
     font-size: 2rem;
@@ -32,7 +32,7 @@
   }
   .Navigation a {
     text-decoration: none;
-    color: black;
+    color: black !important;
     font-size: small;
   }
   .About .about-img .aboutimg {

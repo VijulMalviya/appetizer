@@ -28,13 +28,24 @@
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/responsive.css">
     <link rel="stylesheet" href="./CSS/Swiper.css">
-    <link rel="stylesheet" href="./CSS/tab.css">
+    <link rel="stylesheet" href="./CSS/Tab.css">
     <link rel="stylesheet" href="./CSS/hover.css">
 </head>
 
 <body>
+    <!-- loader -->
+    <div class="container-fluid loader">
+        <div class="load">
+            <div class="line-1"></div>
+            <div class="line-2"></div>
+            <div class="line-3"></div>
+            <div class="line-4"></div>
+            <h3>Appetizer</h3>
+        </div>
+    
+    </div>
     <!-- Navigation -->
-    <div class="container-fluid Navigation p-3 shadow">
+    <div class="container-fluid Navigation p-3 ">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-12 mx-auto">
@@ -50,7 +61,7 @@
                                 <li><a href="">Menu</a></li>
                                 <li><a href="">Stories</a></li>
                                 <li><a href="">Contact</a></li>
-                                <li><a href="" class="order">Book a Table</a></li>
+                                <li><a href=""  class="order ">Book a Table</a></li>
                             </ul>
                         </div>
                     </div>
@@ -70,8 +81,8 @@
             <h2>Appetizer</h2>
             <h1 class="mt-md-3 mt-4">Best Restaurant | ChopHouse</h1>
             <div class="home-btn mt-5 mt-md-4">
-                <a href="" class=" order">Order Now</a>
-                <a href="" class=" menu">View Menu</a>
+                <a href="" id="btn" class=" order hvr-bounce-to-right">Order Now</a>
+                <a href="" class="menu hvr-bounce-to-left">View Menu</a>
             </div>
         </div>
     </div>
@@ -125,7 +136,7 @@
                                 magnam cupiditate tempore optio odit maxime! Quidem eius voluptas nesciunt eveniet nam
                                 vel dolore.</p>
                             <p class="mt-md-2 mt-4">Mon - Fri <b>8 AM - 11 PM</b></p>
-                            <a href="" class="order col-md-4 col-6 mt-4">Book your Table</a>
+                            <a href="" class="order col-md-4 col-6 mt-4 hvr-bounce-to-right">Book your Table</a>
                         </div>
                     </div>
                 </div>
@@ -203,8 +214,228 @@
         </div>
     </div>
 
-     <!-- Chief -->
-     <div class="container-fluid pt-5 pb-5 Chief">
+    <!-- Menu -->
+    <div class="container-fluid pt-5 pb-5 FoodMenu">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-12 mx-auto">
+                    <div class="row FoodMenu-head">
+                        <h2>Specialties</h2>
+                        <h3>Our Menu</h3>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-12">
+
+                            <div class="tab">
+                                <button class="tablinks hvr-bounce-to-right" onclick="FoodCat(event, 'Food')" id="defaultOpen">Food</button>
+                                <button class="tablinks hvr-bounce-to-right" onclick="FoodCat(event, 'Drinks')">Drinks</button>
+                                <button class="tablinks hvr-bounce-to-right" onclick="FoodCat(event, 'Combo')">Combo</button>
+                            </div>
+
+                            <div id="Food" class="tabcontent mt-5">
+                               <div class="row gy-4">
+                                   <div class="col-md-4 col-6">
+                                    <div class="card p-2">
+                                        <img class="card-img-top" src="./Images/Menu/f-1.webp" alt="Card image cap">
+                                        <div class="card-body">
+                                          <h6 class="card-title">Grilled Beef with potatoes</h6>
+                                          <p class="card-text  mb-3"><small>Meat, Potatoes, Rice, Tomatoe</small></p>
+                                          <a href="#" class="hvr-bounce-to-right"><i class="fa fa-inr"></i>&nbsp;249 &emsp; <i class="fa fa-shopping-cart"></i></a>
+                                        </div>
+                                      </div>
+                                   </div>
+                                   <div class="col-md-4 col-6">
+                                    <div class="card p-2">
+                                        <img class="card-img-top" src="./Images/Menu/f-2.webp" alt="Card image cap">
+                                        <div class="card-body">
+                                          <h6 class="card-title">Grilled Beef with potatoes</h6>
+                                          <p class="card-text  mb-3"><small>Meat, Potatoes, Rice, Tomatoe</small></p>
+                                          <a href="#" class="hvr-bounce-to-right"><i class="fa fa-inr"></i>&nbsp;249 &emsp; <i class="fa fa-shopping-cart"></i></a>
+                                        </div>
+                                      </div>
+                                   </div>
+                                   <div class="col-md-4 col-6">
+                                    <div class="card p-2">
+                                        <img class="card-img-top" src="./Images/Menu/f-3.webp" alt="Card image cap">
+                                        <div class="card-body">
+                                          <h6 class="card-title">Grilled Beef with potatoes</h6>
+                                          <p class="card-text  mb-3"><small>Meat, Potatoes, Rice, Tomatoe</small></p>
+                                          <a href="#" class="hvr-bounce-to-right"><i class="fa fa-inr"></i>&nbsp;249 &emsp; <i class="fa fa-shopping-cart"></i></a>
+                                        </div>
+                                      </div>
+                                   </div>
+                                   <div class="col-md-4 col-6">
+                                    <div class="card p-2">
+                                        <img class="card-img-top" src="./Images/Menu/f-4.webp" alt="Card image cap">
+                                        <div class="card-body">
+                                          <h6 class="card-title">Grilled Beef with potatoes</h6>
+                                          <p class="card-text  mb-3"><small>Meat, Potatoes, Rice, Tomatoe</small></p>
+                                          <a href="#" class="hvr-bounce-to-right"><i class="fa fa-inr"></i>&nbsp;249 &emsp; <i class="fa fa-shopping-cart"></i></a>
+                                        </div>
+                                      </div>
+                                   </div>
+                                   <div class="col-md-4 col-6">
+                                    <div class="card p-2">
+                                        <img class="card-img-top" src="./Images/Menu/f-5.webp" alt="Card image cap">
+                                        <div class="card-body">
+                                          <h6 class="card-title">Grilled Beef with potatoes</h6>
+                                          <p class="card-text  mb-3"><small>Meat, Potatoes, Rice, Tomatoe</small></p>
+                                          <a href="#" class="hvr-bounce-to-right"><i class="fa fa-inr"></i>&nbsp;249 &emsp; <i class="fa fa-shopping-cart"></i></a>
+                                        </div>
+                                      </div>
+                                   </div>
+                                   <div class="col-md-4 col-6">
+                                    <div class="card p-2">
+                                        <img class="card-img-top" src="./Images/Menu/f-6.webp" alt="Card image cap">
+                                        <div class="card-body">
+                                          <h6 class="card-title">Grilled Beef with potatoes</h6>
+                                          <p class="card-text  mb-3"><small>Meat, Potatoes, Rice, Tomatoe</small></p>
+                                          <a href="#" class="hvr-bounce-to-right"><i class="fa fa-inr"></i>&nbsp;249 &emsp; <i class="fa fa-shopping-cart"></i></a>
+                                        </div>
+                                      </div>
+                                   </div>
+                               </div>
+                            </div>
+
+                            <div id="Drinks" class="tabcontent mt-5">
+                                <div class="row gy-4">
+                                    <div class="col-md-4 col-6">
+                                     <div class="card p-2">
+                                         <img class="card-img-top" src="./Images/Menu/f-1.webp" alt="Card image cap">
+                                         <div class="card-body">
+                                           <h6 class="card-title">Grilled Beef with potatoes</h6>
+                                           <p class="card-text  mb-3"><small>Meat, Potatoes, Rice, Tomatoe</small></p>
+                                           <a href="#" class="hvr-bounce-to-right"><i class="fa fa-inr"></i>&nbsp;249 &emsp; <i class="fa fa-shopping-cart"></i></a>
+                                         </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-4 col-6">
+                                     <div class="card p-2">
+                                         <img class="card-img-top" src="./Images/Menu/f-2.webp" alt="Card image cap">
+                                         <div class="card-body">
+                                           <h6 class="card-title">Grilled Beef with potatoes</h6>
+                                           <p class="card-text  mb-3"><small>Meat, Potatoes, Rice, Tomatoe</small></p>
+                                           <a href="#" class="hvr-bounce-to-right"><i class="fa fa-inr"></i>&nbsp;249 &emsp; <i class="fa fa-shopping-cart"></i></a>
+                                         </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-4 col-6">
+                                     <div class="card p-2">
+                                         <img class="card-img-top" src="./Images/Menu/f-3.webp" alt="Card image cap">
+                                         <div class="card-body">
+                                           <h6 class="card-title">Grilled Beef with potatoes</h6>
+                                           <p class="card-text  mb-3"><small>Meat, Potatoes, Rice, Tomatoe</small></p>
+                                           <a href="#" class="hvr-bounce-to-right"><i class="fa fa-inr"></i>&nbsp;249 &emsp; <i class="fa fa-shopping-cart"></i></a>
+                                         </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-4 col-6">
+                                     <div class="card p-2">
+                                         <img class="card-img-top" src="./Images/Menu/f-4.webp" alt="Card image cap">
+                                         <div class="card-body">
+                                           <h6 class="card-title">Grilled Beef with potatoes</h6>
+                                           <p class="card-text  mb-3"><small>Meat, Potatoes, Rice, Tomatoe</small></p>
+                                           <a href="#" class="hvr-bounce-to-right"><i class="fa fa-inr"></i>&nbsp;249 &emsp; <i class="fa fa-shopping-cart"></i></a>
+                                         </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-4 col-6">
+                                     <div class="card p-2">
+                                         <img class="card-img-top" src="./Images/Menu/f-5.webp" alt="Card image cap">
+                                         <div class="card-body">
+                                           <h6 class="card-title">Grilled Beef with potatoes</h6>
+                                           <p class="card-text  mb-3"><small>Meat, Potatoes, Rice, Tomatoe</small></p>
+                                           <a href="#" class="hvr-bounce-to-right"><i class="fa fa-inr"></i>&nbsp;249 &emsp; <i class="fa fa-shopping-cart"></i></a>
+                                         </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-4 col-6">
+                                     <div class="card p-2">
+                                         <img class="card-img-top" src="./Images/Menu/f-6.webp" alt="Card image cap">
+                                         <div class="card-body">
+                                           <h6 class="card-title">Grilled Beef with potatoes</h6>
+                                           <p class="card-text  mb-3"><small>Meat, Potatoes, Rice, Tomatoe</small></p>
+                                           <a href="#" class="hvr-bounce-to-right"><i class="fa fa-inr"></i>&nbsp;249 &emsp; <i class="fa fa-shopping-cart"></i></a>
+                                         </div>
+                                       </div>
+                                    </div>
+                                </div>
+                             </div>
+
+                            <div id="Combo" class="tabcontent mt-5">
+                                <div class="row gy-4">
+                                    <div class="col-md-4 col-6">
+                                     <div class="card p-2">
+                                         <img class="card-img-top" src="./Images/Menu/f-1.webp" alt="Card image cap">
+                                         <div class="card-body">
+                                           <h6 class="card-title">Grilled Beef with potatoes</h6>
+                                           <p class="card-text  mb-3"><small>Meat, Potatoes, Rice, Tomatoe</small></p>
+                                           <a href="#" class="hvr-bounce-to-right"><i class="fa fa-inr"></i>&nbsp;249 &emsp; <i class="fa fa-shopping-cart"></i></a>
+                                         </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-4 col-6">
+                                     <div class="card p-2">
+                                         <img class="card-img-top" src="./Images/Menu/f-2.webp" alt="Card image cap">
+                                         <div class="card-body">
+                                           <h6 class="card-title">Grilled Beef with potatoes</h6>
+                                           <p class="card-text  mb-3"><small>Meat, Potatoes, Rice, Tomatoe</small></p>
+                                           <a href="#" class="hvr-bounce-to-right"><i class="fa fa-inr"></i>&nbsp;249 &emsp; <i class="fa fa-shopping-cart"></i></a>
+                                         </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-4 col-6">
+                                     <div class="card p-2">
+                                         <img class="card-img-top" src="./Images/Menu/f-3.webp" alt="Card image cap">
+                                         <div class="card-body">
+                                           <h6 class="card-title">Grilled Beef with potatoes</h6>
+                                           <p class="card-text  mb-3"><small>Meat, Potatoes, Rice, Tomatoe</small></p>
+                                           <a href="#" class="hvr-bounce-to-right"><i class="fa fa-inr"></i>&nbsp;249 &emsp; <i class="fa fa-shopping-cart"></i></a>
+                                         </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-4 col-6">
+                                     <div class="card p-2">
+                                         <img class="card-img-top" src="./Images/Menu/f-4.webp" alt="Card image cap">
+                                         <div class="card-body">
+                                           <h6 class="card-title">Grilled Beef with potatoes</h6>
+                                           <p class="card-text  mb-3"><small>Meat, Potatoes, Rice, Tomatoe</small></p>
+                                           <a href="#" class="hvr-bounce-to-right"><i class="fa fa-inr"></i>&nbsp;249 &emsp; <i class="fa fa-shopping-cart"></i></a>
+                                         </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-4 col-6">
+                                     <div class="card p-2">
+                                         <img class="card-img-top" src="./Images/Menu/f-5.webp" alt="Card image cap">
+                                         <div class="card-body">
+                                           <h6 class="card-title">Grilled Beef with potatoes</h6>
+                                           <p class="card-text  mb-3"><small>Meat, Potatoes, Rice, Tomatoe</small></p>
+                                           <a href="#" class="hvr-bounce-to-right"><i class="fa fa-inr"></i>&nbsp;249 &emsp; <i class="fa fa-shopping-cart"></i></a>
+                                         </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-4 col-6">
+                                     <div class="card p-2">
+                                         <img class="card-img-top" src="./Images/Menu/f-6.webp" alt="Card image cap">
+                                         <div class="card-body">
+                                           <h6 class="card-title">Grilled Beef with potatoes</h6>
+                                           <p class="card-text  mb-3"><small>Meat, Potatoes, Rice, Tomatoe</small></p>
+                                           <a href="#" class="hvr-bounce-to-right"><i class="fa fa-inr"></i>&nbsp;249 &emsp; <i class="fa fa-shopping-cart"></i></a>
+                                         </div>
+                                       </div>
+                                    </div>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Chief -->
+    <div class="container-fluid pt-5 pb-5 Chief">
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-12 mx-auto">
@@ -221,10 +452,10 @@
                             <p class=""><small>Restaurant Owner</small></p>
                             <p class="social-media">
                                 <small>
-                                    <a href=""><i class="fa fa-facebook"></i></a>
-                                    <a href=""><i class="fa fa-instagram"></i></a>
-                                    <a href=""><i class="fa fa-twitter"></i></a>
-                                    <a href=""><i class="fa fa-google"></i></a>
+                                    <a href="" class="hvr-buzz-out" ><i class="fa fa-facebook"></i></a>
+                                    <a href="" class="hvr-buzz-out" ><i class="fa fa-instagram"></i></a>
+                                    <a href="" class="hvr-buzz-out" ><i class="fa fa-twitter"></i></a>
+                                    <a href="" class="hvr-buzz-out" ><i class="fa fa-google"></i></a>
                                 </small>
                             </p>
 
@@ -237,10 +468,10 @@
                             <p class=""><small>Head Chief</small></p>
                             <p class="social-media">
                                 <small>
-                                    <a href=""><i class="fa fa-facebook"></i></a>
-                                    <a href=""><i class="fa fa-instagram"></i></a>
-                                    <a href=""><i class="fa fa-twitter"></i></a>
-                                    <a href=""><i class="fa fa-google"></i></a>
+                                    <a href="" class="hvr-buzz-out"><i class="fa fa-facebook"></i></a>
+                                    <a href="" class="hvr-buzz-out"><i class="fa fa-instagram"></i></a>
+                                    <a href="" class="hvr-buzz-out"><i class="fa fa-twitter"></i></a>
+                                    <a href="" class="hvr-buzz-out"><i class="fa fa-google"></i></a>
                                 </small>
                             </p>
                         </div>
@@ -252,10 +483,10 @@
                             <p class=""><small>Chief</small></p>
                             <p class="social-media">
                                 <small>
-                                    <a href=""><i class="fa fa-facebook"></i></a>
-                                    <a href=""><i class="fa fa-instagram"></i></a>
-                                    <a href=""><i class="fa fa-twitter"></i></a>
-                                    <a href=""><i class="fa fa-google"></i></a>
+                                    <a href="" class="hvr-buzz-out"><i class="fa fa-facebook"></i></a>
+                                    <a href="" class="hvr-buzz-out"><i class="fa fa-instagram"></i></a>
+                                    <a href="" class="hvr-buzz-out"><i class="fa fa-twitter"></i></a>
+                                    <a href="" class="hvr-buzz-out"><i class="fa fa-google"></i></a>
                                 </small>
                             </p>
                         </div>
@@ -267,14 +498,14 @@
                             <p class=""><small>Chief</small></p>
                             <p class="social-media">
                                 <small>
-                                    <a href=""><i class="fa fa-facebook"></i></a>
-                                    <a href=""><i class="fa fa-instagram"></i></a>
-                                    <a href=""><i class="fa fa-twitter"></i></a>
-                                    <a href=""><i class="fa fa-google"></i></a>
+                                    <a href="" class="hvr-buzz-out"><i class="fa fa-facebook"></i></a>
+                                    <a href="" class="hvr-buzz-out"><i class="fa fa-instagram"></i></a>
+                                    <a href="" class="hvr-buzz-out"><i class="fa fa-twitter"></i></a>
+                                    <a href="" class="hvr-buzz-out"><i class="fa fa-google"></i></a>
                                 </small>
                             </p>
                         </div>
-                      
+
 
                     </div>
                 </div>
@@ -285,59 +516,58 @@
     <!-- Book -->
     <div class="container-fluid pt-5 pb-5 Book">
         <div class="container">
-            <div class="row">  
+            <div class="row">
                 <div class="col-lg-6 col-10 Book-text p-4 mx-auto">
-                            <div class="Book-head">
-                                <h2>Book a Table</h2>
-                                <h3>Make Reservation</h3>
-                                <div class="row mt-5">
-                                    <form>
-                                        <div class="row gy-lg-2 gy-3">
-                                            <div class="col-6">
-                                                <label for="inputEmail4">Name</label>
-                                                <input type="email" class="form-control" id="inputEmail4"
-                                                    placeholder="Your Name">
-                                            </div>
-                                            <div class="col-6">
-                                                <label for="inputEmail4">Email</label>
-                                                <input type="email" class="form-control" id="inputEmail4"
-                                                    placeholder="Your Email">
-                                            </div>
-                                            <div class="col-6">
-                                                <label for="inputEmail4">Phone</label>
-                                                <input type="Text" inputmode="numeric" class="form-control"
-                                                    id="inputEmail4" placeholder="Phone">
-                                            </div>
-                                            <div class="col-6">
-                                                <label for="inputEmail4">Date</label>
-                                                <input type="date" class="form-control" id="inputEmail4"
-                                                    placeholder="Your Email">
-                                            </div>
-                                            <div class="col-6">
-                                                <label for="inputEmail4">Time</label>
-                                                <input type="Time" class="form-control" id="inputEmail4"
-                                                    placeholder="Phone">
-                                            </div>
-                                            <div class="col-6">
-                                                <label for="inputState">Person</label>
-                                                <select id="inputState" class="form-control">
-                                                    <option selected>1</option>
-                                                    <option>2</option>
-                                                </select>
-                                            </div>
-                                            <button type="submit" class="col-md-4 col-6 mx-auto booktable">Book a Table</button>
-                                        </div>
-                                        
-                                    </form>
+                    <div class="Book-head">
+                        <h2>Book a Table</h2>
+                        <h3>Make Reservation</h3>
+                        <div class="row mt-5">
+                            <form>
+                                <div class="row gy-lg-2 gy-3">
+                                    <div class="col-6">
+                                        <label for="inputEmail4">Name</label>
+                                        <input type="email" class="form-control" id="inputEmail4"
+                                            placeholder="Your Name">
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="inputEmail4">Email</label>
+                                        <input type="email" class="form-control" id="inputEmail4"
+                                            placeholder="Your Email">
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="inputEmail4">Phone</label>
+                                        <input type="Text" inputmode="numeric" class="form-control" id="inputEmail4"
+                                            placeholder="Phone">
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="inputEmail4">Date</label>
+                                        <input type="date" class="form-control" id="inputEmail4"
+                                            placeholder="Your Email">
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="inputEmail4">Time</label>
+                                        <input type="Time" class="form-control" id="inputEmail4" placeholder="Phone">
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="inputState">Person</label>
+                                        <select id="inputState" class="form-control">
+                                            <option selected>1</option>
+                                            <option>2</option>
+                                        </select>
+                                    </div>
+                                    <button type="submit" class="col-md-4 col-6 mx-auto booktable hvr-bounce-to-right">Book a Table</button>
                                 </div>
-                            </div>
-                </div>    
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-     <!-- Testimony -->
-     <div class="container-fluid pt-5 pb-5 Testimony">
+    <!-- Testimony -->
+    <div class="container-fluid pt-5 pb-5 Testimony">
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-12 mx-auto">
@@ -349,46 +579,61 @@
                         <div class="col-12">
                             <div class="swiper mySwiper">
                                 <div class="swiper-wrapper">
-                                  <div class="swiper-slide">
-                                      <img src="./Images/Testimonial/person_1.webp" class="img-circle img-fluid" alt="">
-                                      <i class="fa fa-quote-left"></i>
-                                      <p class="mt-4"><small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, vel excepturi veritatis consequatur dolorum molestias.</small></p>
-                                      <h6 class="mt-3">Ian Boner</h6>
-                                      <p><small>Customer </small></p>
-                                  </div>
-                                  <div class="swiper-slide">
-                                    <img src="./Images/Testimonial/person_2.webp" class="img-circle img-fluid" alt="">
-                                    <i class="fa fa-quote-left"></i>
-                                    <p class="mt-4"><small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, vel excepturi veritatis consequatur dolorum molestias.</small></p>
-                                    <h6 class="mt-3">Ian Boner</h6>
-                                    <p><small>Customer </small></p>
+                                    <div class="swiper-slide">
+                                        <img src="./Images/Testimonial/person_1.webp" class="img-circle img-fluid"
+                                            alt="">
+                                        <i class="fa fa-quote-left"></i>
+                                        <p class="mt-4"><small>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                                Ullam, vel excepturi veritatis consequatur dolorum molestias.</small>
+                                        </p>
+                                        <h6 class="mt-3">Ian Boner</h6>
+                                        <p><small>Customer </small></p>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./Images/Testimonial/person_2.webp" class="img-circle img-fluid"
+                                            alt="">
+                                        <i class="fa fa-quote-left"></i>
+                                        <p class="mt-4"><small>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                                Ullam, vel excepturi veritatis consequatur dolorum molestias.</small>
+                                        </p>
+                                        <h6 class="mt-3">Ian Boner</h6>
+                                        <p><small>Customer </small></p>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./Images/Testimonial/person_3.webp" class="img-circle img-fluid"
+                                            alt="">
+                                        <i class="fa fa-quote-left"></i>
+                                        <p class="mt-4"><small>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                                Ullam, vel excepturi veritatis consequatur dolorum molestias.</small>
+                                        </p>
+                                        <h6 class="mt-3">Ian Boner</h6>
+                                        <p><small>Customer </small></p>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./Images/Testimonial/person_2.webp" class="img-circle img-fluid"
+                                            alt="">
+                                        <i class="fa fa-quote-left"></i>
+                                        <p class="mt-4"><small>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                                Ullam, vel excepturi veritatis consequatur dolorum molestias.</small>
+                                        </p>
+                                        <h6 class="mt-3">Ian Boner</h6>
+                                        <p><small>Customer </small></p>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./Images/Testimonial/person_1.webp" class="img-circle img-fluid"
+                                            alt="">
+                                        <i class="fa fa-quote-left"></i>
+                                        <p class="mt-4"><small>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                                Ullam, vel excepturi veritatis consequatur dolorum molestias.</small>
+                                        </p>
+                                        <h6 class="mt-3">Ian Boner</h6>
+                                        <p><small>Customer </small></p>
+                                    </div>
+
                                 </div>
-                                <div class="swiper-slide">
-                                    <img src="./Images/Testimonial/person_3.webp" class="img-circle img-fluid" alt="">
-                                    <i class="fa fa-quote-left"></i>
-                                    <p class="mt-4"><small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, vel excepturi veritatis consequatur dolorum molestias.</small></p>
-                                    <h6 class="mt-3">Ian Boner</h6>
-                                    <p><small>Customer </small></p>
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="./Images/Testimonial/person_2.webp" class="img-circle img-fluid" alt="">
-                                    <i class="fa fa-quote-left"></i>
-                                    <p class="mt-4"><small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, vel excepturi veritatis consequatur dolorum molestias.</small></p>
-                                    <h6 class="mt-3">Ian Boner</h6>
-                                    <p><small>Customer </small></p>
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="./Images/Testimonial/person_1.webp" class="img-circle img-fluid" alt="">
-                                    <i class="fa fa-quote-left"></i>
-                                    <p class="mt-4"><small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, vel excepturi veritatis consequatur dolorum molestias.</small></p>
-                                    <h6 class="mt-3">Ian Boner</h6>
-                                    <p><small>Customer </small></p>
-                                </div>
-                                  
-                                </div>
-                            
+
                                 <div class="swiper-pagination mt-5"></div>
-                              </div>     
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -399,57 +644,57 @@
 
     <!-- Blog -->
     <div class="container-fluid pt-5 pb-5 Blog">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-10 col-12 mx-auto">
-                        <div class="row Blog-head">
-                            <h2>Blog</h2>
-                            <h3>Recent Posts</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-12 mx-auto">
+                    <div class="row Blog-head">
+                        <h2>Blog</h2>
+                        <h3>Recent Posts</h3>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-md-4 col-6 p-4 Blog-card mx-auto">
+                            <div class="card">
+                                <img src="./Images/Blog/image_2.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p><small>Sept 06 2021</small></p>
+                                    <h6 class="card-title mt-2">Taste the delicious foods in Asia.</h6>
+                                    <div class="blogcard-bottom class mt-2">
+                                        <a href=""><small>Read More</small></a>
+                                        <a href=""><small><i class="fa fa-bookmark-o"></i></small></a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="row mt-5">
-                            <div class="col-md-4 col-6 p-4 Blog-card mx-auto">
-                                <div class="card">
-                                    <img src="./Images/Blog/image_2.webp" class="card-img-top" alt="...">
-                                    <div class="card-body">
+                        <div class="col-md-4 col-6 p-4 Blog-card mx-auto">
+                            <div class="card">
+                                <img src="./Images/Blog/image_3.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
                                     <p><small>Sept 06 2021</small></p>
-                                      <h6 class="card-title mt-2">Taste the delicious foods in Asia.</h6>
-                                      <div class="blogcard-bottom class mt-2">
-                                          <a href=""><small>Read More</small></a>
-                                          <a href=""><small><i class="fa fa-bookmark-o"></i></small></a>
-                                      </div>
+                                    <h6 class="card-title mt-2">Taste the delicious foods in Asia.</h6>
+                                    <div class="blogcard-bottom class mt-2">
+                                        <a href=""><small>Read More</small></a>
+                                        <a href=""><small><i class="fa fa-bookmark-o"></i></small></a>
                                     </div>
-                                  </div>
+                                </div>
                             </div>
-                            <div class="col-md-4 col-6 p-4 Blog-card mx-auto">
-                                <div class="card">
-                                    <img src="./Images/Blog/image_3.webp" class="card-img-top" alt="...">
-                                    <div class="card-body">
+                        </div>
+                        <div class="col-md-4 col-6 p-4 Blog-card mx-auto">
+                            <div class="card">
+                                <img src="./Images/Blog/image_1.webp" class="card-img-top" alt="...">
+                                <div class="card-body ">
                                     <p><small>Sept 06 2021</small></p>
-                                      <h6 class="card-title mt-2">Taste the delicious foods in Asia.</h6>
-                                      <div class="blogcard-bottom class mt-2">
-                                          <a href=""><small>Read More</small></a>
-                                          <a href=""><small><i class="fa fa-bookmark-o"></i></small></a>
-                                      </div>
+                                    <h6 class="card-title mt-2">Taste the delicious foods in Asia.</h6>
+                                    <div class="blogcard-bottom class mt-2">
+                                        <a href=""><small>Read More</small></a>
+                                        <a href=""><small><i class="fa fa-bookmark-o"></i></small></a>
                                     </div>
-                                  </div>
-                            </div>
-                            <div class="col-md-4 col-6 p-4 Blog-card mx-auto">
-                                <div class="card">
-                                    <img src="./Images/Blog/image_1.webp" class="card-img-top" alt="...">
-                                    <div class="card-body ">
-                                    <p><small>Sept 06 2021</small></p>
-                                      <h6 class="card-title mt-2">Taste the delicious foods in Asia.</h6>
-                                      <div class="blogcard-bottom class mt-2">
-                                          <a href=""><small>Read More</small></a>
-                                          <a href=""><small><i class="fa fa-bookmark-o"></i></small></a>
-                                      </div>
-                                    </div>
-                                  </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
     </div>
 
     <!-- insta -->
@@ -471,71 +716,80 @@
         <div class="container">
             <div class="row">
                 <div class="col-10 mx-auto">
-                   <div class="row gy-5">
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <h6>Appetizer</h6>
-                        <ul class="mt-3">
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptatibus aperiam reprehenderit.</li>
-                            <li class="mt-4 social-media">
-                                <a href=""><i class="fa fa-facebook"></i></a>
-                                <a href=""><i class="fa fa-instagram"></i></a>
-                                <a href=""><i class="fa fa-twitter"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-12 openhrs">
-                        <h6>Open Hours</h6>
-                        <ul class="mt-3">
-                            <li>Monday <p>9:00 - 24:00</p></li>
-                            <li>Tuesday <p>9:00 - 24:00</p></li>
-                            <li>Wednesday <p>9:00 - 24:00</p></li>
-                            <li>Thursday <p>9:00 - 24:00</p></li>
-                            <li>Friday <p>9:00 - 24:00</p></li>
-                            <li>Saturday <p>9:00 - 24:00</p></li>
-                            <li>Saturday <p>17:00 - 24:00</p></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <h6>Insta Feeds</h6>
-                        <ul class="mt-3"></ul>
+                    <div class="row gy-5">
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <h6>Appetizer</h6>
+                            <ul class="mt-3">
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptatibus
+                                    aperiam reprehenderit.</li>
+                                <li class="mt-4 social-media">
+                                    <a href=""><i class="fa fa-facebook"></i></a>
+                                    <a href=""><i class="fa fa-instagram"></i></a>
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 openhrs">
+                            <h6>Open Hours</h6>
+                            <ul class="mt-3">
+                                <li>Monday <p>9:00 - 24:00</p>
+                                </li>
+                                <li>Tuesday <p>9:00 - 24:00</p>
+                                </li>
+                                <li>Wednesday <p>9:00 - 24:00</p>
+                                </li>
+                                <li>Thursday <p>9:00 - 24:00</p>
+                                </li>
+                                <li>Friday <p>9:00 - 24:00</p>
+                                </li>
+                                <li>Saturday <p>9:00 - 24:00</p>
+                                </li>
+                                <li>Saturday <p>17:00 - 24:00</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <h6>Insta Feeds</h6>
+                            <ul class="mt-3"></ul>
                             <div class="row" style="margin-left: 0.2rem;">
-                                <div class="col-3 footerinsta insta-1">  
+                                <div class="col-3 footerinsta insta-1">
                                 </div>
-                                <div class="col-3 footerinsta insta-2">  
+                                <div class="col-3 footerinsta insta-2">
                                 </div>
-                                <div class="col-3 footerinsta insta-3">  
+                                <div class="col-3 footerinsta insta-3">
                                 </div>
-                                <div class="col-3 footerinsta insta-4">  
+                                <div class="col-3 footerinsta insta-4">
                                 </div>
-                                <div class="col-3 footerinsta insta-5">  
+                                <div class="col-3 footerinsta insta-5">
                                 </div>
-                                <div class="col-3 footerinsta insta-6">  
+                                <div class="col-3 footerinsta insta-6">
                                 </div>
 
                             </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-12 ">
-                        <h6>Newsletter</h6>
-                        <ul class="mt-3">
-                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, nostrum!</li>
-                            <form action="" class="mt-4">
-                                
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 ">
+                            <h6>Newsletter</h6>
+                            <ul class="mt-3">
+                                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, nostrum!</li>
+                                <form action="" class="mt-4">
+
                                     <form>
                                         <div class="form-group">
-                                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Subscribe">
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp" placeholder="Subscribe">
                                         </div>
                                         <div class="form-group">
-                                        <button type="submit" class="btn mt-1 footerbtn col-12">Subscribe</button>
+                                            <button type="submit" class="btn mt-1 footerbtn col-12 hvr-bounce-to-right">Subscribe</button>
                                         </div>
-                                      </form>
-                                
-                            </form>
-                        </ul>
+                                    </form>
+
+                                </form>
+                            </ul>
+                        </div>
                     </div>
-                   </div>
                     <hr class="mt-5" style="color: whitesmoke;">
                     <div class="lowerfooter">
-                    <p class="text-center ">Copyright ©2021 All rights reserved | <span>Vijul Malviya</span></p>
+                        <p class="text-center ">Copyright ©2021 All rights reserved | <span>Vijul Malviya</span></p>
 
                     </div>
                 </div>
@@ -545,6 +799,9 @@
 
     <!-- Jquery 3.5.1 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
 
     <!-- Bootstrap 5.0 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -558,6 +815,8 @@
     <script src="./Script/swiper.js"></script>
     <script src="./Script/Counter.js"></script>
     <script src="./Script/script.js"></script>
+    <script src="./Script/Tab.js"></script>
+
 
 
 </body>
